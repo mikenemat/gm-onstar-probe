@@ -8,8 +8,8 @@ def timestamp():
     return "%s.001Z" % (datetime.datetime.utcnow().replace(microsecond=0).isoformat())
 
 signing_key = jwk.JWK(**{'k': base64.b64encode("G4KuYxylN9ZYRxiFxRCQ"), 'kty':'oct'})
-client_id = "CLIENT_ID_FROM_ANDROID_APP"
-device_id = "DEVICE_ID_FROM_ANDROID_APP"
+client_id = "CLIENT_ID_FROM_ANDROID_APP_HTTPS_TRAFFIC"
+device_id = "DEVICE_ID_FROM_ANDROID_APP_HTTPS_TRAFFIC"
 username = "ONSTAR_USERNAME"
 password = "ONSTAR_PASSWORD"
 pin = "ONSTAR_PIN"
