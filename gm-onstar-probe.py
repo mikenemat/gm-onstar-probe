@@ -8,8 +8,9 @@ def timestamp():
     return "%s.001Z" % (datetime.datetime.utcnow().replace(microsecond=0).isoformat())
 
 signing_key = jwk.JWK(**{'k': base64.b64encode("G4KuYxylN9ZYRxiFxRCQ"), 'kty':'oct'})
-client_id = "CLIENT_ID_FROM_ANDROID_APP_HTTPS_TRAFFIC"
-device_id = "DEVICE_ID_FROM_ANDROID_APP_HTTPS_TRAFFIC"
+client_id = "OMB_CVY_AND_3A0"
+#UNCOMMENT LINE BELOW AND ADD RANDOM UUIDV4 FROM https://www.uuidgenerator.net/ FOR THIS TO WORK
+#device_id = "INSERT_RANDOM_UUIDV4_HERE"
 username = "ONSTAR_USERNAME"
 password = "ONSTAR_PASSWORD"
 pin = "ONSTAR_PIN"
