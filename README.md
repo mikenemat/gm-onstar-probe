@@ -10,4 +10,5 @@ Please share credit if used elsewhere - reverse engineering this was non-trivial
 
 NOTES:
 
-- Fixed nonces in use for the JWT/oauth handshake...will be fixed soon
+- Fixed nonces in use for the JWT/oauth handshake - no plans to fix. This 2nd layer of crypto ontop of SSL appears useless.
+- The oauth handshake seems to fail periodically for no obvious reason with an "invalid_request" response - this is not handled by the script and will cause it to crash. Perhaps due to a rate-limiting function. Be smart and don't use this frivolously.
