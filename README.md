@@ -2,7 +2,7 @@
 
 I drive a Chevy Volt. Great car. GM's restrictions and obfuscations around IP connectivity....not so great.
 
-To get it working, populate the placeholder variables at the top.
+To get it working, populate the placeholder variables at the top (device_id, username, password, pin, vin_number) 
 
 Use this script with whatever HA platform you want to get cool features like "Alexa! Remote start my Volt". 
 
