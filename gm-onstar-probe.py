@@ -3,13 +3,14 @@ import datetime
 import base64
 import json
 import uuid
+import hashlib
 from jwcrypto import jwt, jwk
 
 def timestamp():
     return "%s.001Z" % (datetime.datetime.utcnow().replace(microsecond=0).isoformat())
 
 def nonce():
-    random = uuid.uuid4().hex
+    random = hashlib.sha256(uuid.uuid4().hex).hexdigest()
     return base64.b32encode(random)[:26].lower()
 
 signing_key = jwk.JWK(**{'k': base64.b64encode("G4KuYxylN9ZYRxiFxRCQ"), 'kty':'oct'})
