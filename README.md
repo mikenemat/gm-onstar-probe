@@ -12,5 +12,5 @@ NOTES:
 - The oauth handshake seems to fail periodically for no obvious reason with an "invalid_request" response - this is not handled by the script and will cause it to crash. Perhaps due to a rate-limiting function. Be smart and don't use this frivolously. Will investigate, but no promises.
 
 Python stuff:
--Tested with latest Python 2.7.x.
--Libraries: jwcrypto, requests
+- Tested with latest Python 2.7.x.
+- Libraries: jwcrypto, requests
