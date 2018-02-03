@@ -2,10 +2,15 @@ import requests
 import datetime
 import base64
 import json
+import uuid
 from jwcrypto import jwt, jwk
 
 def timestamp():
     return "%s.001Z" % (datetime.datetime.utcnow().replace(microsecond=0).isoformat())
+
+def nonce():
+    random = uuid.uuid4().hex
+    return base64.b32encode(random)[:26]
 
 signing_key = jwk.JWK(**{'k': base64.b64encode("G4KuYxylN9ZYRxiFxRCQ"), 'kty':'oct'})
 client_id = "OMB_CVY_AND_3A0"
@@ -30,7 +35,7 @@ data_auth = {
   "client_id": client_id,
   "device_id": device_id,
   "grant_type": "password",
-  "nonce": "icl1b863c91o7mocb16imv69uf",
+  "nonce": nonce(),
   "password": password,
   "scope": "onstar gmoc commerce msso",
   "timestamp": timestamp(),
@@ -86,7 +91,7 @@ data_upgrade  = {
   "credential_type": "PIN",
   "device_id": device_id,
   "grant_type": "password",
-  "nonce": "icl1b863c91o7mocb16imv69uf",
+  "nonce": nonce(),
   "timestamp": timestamp(),
 }
 
