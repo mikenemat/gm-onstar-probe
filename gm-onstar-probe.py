@@ -15,7 +15,7 @@ def nonce():
 
 signing_key = jwk.JWK(**{'k': base64.b64encode("G4KuYxylN9ZYRxiFxRCQ"), 'kty':'oct'})
 client_id = "OMB_CVY_AND_3A0"
-#UNCOMMENT LINE BELOW AND ADD RANDOM UUIDV4 FROM https://www.uuidgenerator.net/ FOR THIS TO WORK
+#UNCOMMENT LINE BELOW AND ADD RANDOM UUIDV4 FROM https://www.uuidgenerator.net/ OR SIMILAR FOR THIS TO WORK
 #device_id = "INSERT_RANDOM_UUIDV4_HERE"
 username = "ONSTAR_USERNAME"
 password = "ONSTAR_PASSWORD"
