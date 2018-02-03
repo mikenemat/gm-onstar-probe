@@ -10,7 +10,7 @@ def timestamp():
 
 def nonce():
     random = uuid.uuid4().hex
-    return base64.b32encode(random)[:26]
+    return base64.b32encode(random)[:26].lower()
 
 signing_key = jwk.JWK(**{'k': base64.b64encode("G4KuYxylN9ZYRxiFxRCQ"), 'kty':'oct'})
 client_id = "OMB_CVY_AND_3A0"
