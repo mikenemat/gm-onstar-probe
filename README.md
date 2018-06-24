@@ -17,3 +17,7 @@ NOTES:
 Python stuff:
 - Tested with latest Python 2.7.x.
 - Libraries: jwcrypto, requests
+
+Changelog:
+
+June 24, 2018 - Updated with new client IDs and JWT signing key. Old ones are not working any more.
