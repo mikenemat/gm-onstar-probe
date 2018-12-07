@@ -18,6 +18,12 @@ Python stuff:
 - Tested with latest Python 2.7.x.
 - Libraries: jwcrypto, requests
 
+Usage:
+- pip install jwcrypto and requests
+- Edit variables on line 19-24 with your onstar creds
+- Execute with Python and watch for successful output stating remote start in progress.
+- If you get an error for invalid client id or bad key, check back here and get a new version. GM Probably revoked the keys from the old app. I usually catch this within a week or two and post updates. Happens once every 6-8 months.
+
 Changelog:
 
 June 24, 2018 - Updated with new client IDs and JWT signing key. Old ones are not working any more.
