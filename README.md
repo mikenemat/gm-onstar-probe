@@ -29,3 +29,5 @@ Changelog:
 June 24, 2018 - Updated with new client IDs and JWT signing key. Old ones are not working any more.
 
 Dec 6, 2018 - Updated with new client IDs and JWT signing key. Old ones are not working any more.
+
+Aug 5, 2019 - Updated with new client IDs and JWT signing key. Old ones are not working any more. Thanks @sradner13
