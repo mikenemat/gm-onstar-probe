@@ -13,8 +13,8 @@ def nonce():
     random = hashlib.sha256(uuid.uuid4().hex).hexdigest()
     return base64.b32encode(random)[:26].lower()
 
-signing_key = jwk.JWK(**{'k': base64.b64encode("OxeOjX9FnVkJQQdSuwvR"), 'kty':'oct'})
-client_id = "OMB_CVY_AND_3P0"
+signing_key = jwk.JWK(**{'k': base64.b64encode("f2uUeTEZcJVRHgFDc7mDQ5HTbByCvYmmAYpD"), 'kty':'oct'})
+client_id = "OMB_CVY_AND_5S0"
 
 #UNCOMMENT LINE BELOW AND ADD RANDOM UUIDV4 FROM https://www.uuidgenerator.net/ OR SIMILAR FOR THIS TO WORK
 #device_id = "INSERT_RANDOM_UUIDV4_HERE"
@@ -38,7 +38,7 @@ data_auth = {
   "grant_type": "password",
   "nonce": nonce(),
   "password": password,
-  "scope": "onstar gmoc commerce msso",
+  "scope": "onstar gmoc commerce msso priv",
   "timestamp": timestamp(),
   "username": username
 }
