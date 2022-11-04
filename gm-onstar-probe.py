@@ -38,7 +38,7 @@ data_auth = {
   "grant_type": "password",
   "nonce": nonce(),
   "password": password,
-  "scope": "onstar gmoc commerce msso",
+  "scope": "onstar gmoc commerce msso priv",
   "timestamp": timestamp(),
   "username": username
 }
